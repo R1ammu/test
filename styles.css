@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.one {
+    box-sizing: content-box;
+    background-color: tomato;
+    border: 10px solid black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 700px;
+    height: 300px;
+}
+
+.two {
+    background-color: aqua;
+    border: 10px solid black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 700px;
+    height: 300px;
+
+}
