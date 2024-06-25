@@ -7,24 +7,21 @@
     font-family: sans-serif;
 }
 
-.one {
-    box-sizing: content-box;
-    background-color: tomato;
-    border: 10px solid black;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 20px;
-    width: 700px;
+.one, .two {
+    width: 300px;
     height: 300px;
+    margin: 50px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    border-radius: 20px;
+}
+
+.one {
+    background-color: aqua;
 }
 
 .two {
-    background-color: aqua;
-    border: 10px solid black;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 20px;
-    width: 700px;
-    height: 300px;
-
+    background-color: tomato;
+    margin-left: 400px;
+    margin-top: -350px;
 }
