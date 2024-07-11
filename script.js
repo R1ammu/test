@@ -1,6 +1,4 @@
-const myInt = 5;
-const myFloat = 6.667;
-myInt;
-myFloat;
+let x = 5;
+let y = '3';
 
-typeof myInt;
+alert( x+y)
