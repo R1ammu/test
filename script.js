@@ -1,4 +1,5 @@
-let x = 5;
-let y = '3';
+function sum(param1, param2) {
+    return param1 + param2;
+}
 
-alert( x+y)
+console.log(sum(5, 2))
