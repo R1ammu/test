@@ -1,5 +1,9 @@
-function sum(param1, param2) {
-    return param1 + param2;
+const x = "declared outside function";
+
+exampleFunction();
+
+function exampleFunction() {
+  console.log(x);
 }
 
-console.log(sum(5, 2))
+console.log(x);
