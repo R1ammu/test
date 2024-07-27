@@ -1,9 +1,18 @@
-const x = "declared outside function";
+function pow(x, n) {
+  let result = x;
 
-exampleFunction();
+  for (let i = 1; i < n; i++) {
+    result *= x;
+  }
 
-function exampleFunction() {
-  console.log(x);
+  return result;
 }
 
-console.log(x);
+let x = prompt("x?", '');
+let n = prompt("n?", '');
+
+if (n < 1) {
+  alert(`Power ${n} is not supported, use a positive integer`);
+  n = prompt("n?", '');
+  alert(pow(x, n))
+}
