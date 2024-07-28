@@ -1,34 +1,32 @@
-function add7(number) {
-  return number + 7;
-}
-console.log(add7(3))
+// FIZZBUZZ
 
+let userInput = prompt("Procure the integer!");
+let userNumber = parseInt(userInput, 10);
 
-function multiply(a, b) {
-  return a * b ;
-}
-console.log(multiply(3, 8))
+let b = "Buzz";
+let f = "Fizz";
+let fb = "FizzBuzz";
 
-
-function capitalize(str) {
-  if (str.length === 0) {
-    return str; // Return the string as is if it is empty
+function numbers(userNumber) {
+  if (isNaN(userNumber) || userNumber <= 0) {
+    console.log("The input is not a valid positive number.");
+    return;
   }
-  
-  // Convert the first character to uppercase and the rest to lowercase
-  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+
+let int = 0;
+
+  while (userNumber > int) {
+    int++;
+    if (int % 3 === 0 && int % 5 === 0) {
+    console.log(fb);
+    } else if (int % 5 === 0) {
+      console.log(b)
+    } else if (int % 3 === 0) {
+      console.log(f)
+    } else {
+      console.log(int)
+    }
+  }
 }
 
-// Example usage
-console.log(capitalize("hello"));     // Output: "Hello"
-console.log(capitalize("HELLO"));     // Output: "Hello"
-console.log(capitalize("hELLO"));     // Output: "Hello"
-console.log(capitalize("HeLLo"));     // Output: "Hello"
-console.log(capitalize(""));          // Output: ""
-console.log(capitalize("a"));         // Output: "A"
-console.log(capitalize("A"));         // Output: "A"
-
-
-function lastLetter() {
-
-}
+numbers(userNumber);
