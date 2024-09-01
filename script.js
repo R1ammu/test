@@ -1,7 +1,11 @@
-const container = document.querySelector('#container');
+const grandparent = document.querySelector('.grandparent')
+const parent = document.querySelector('.parent')
+const child = document.querySelectorAll('.child')
 
-const content = document.createElement('div');
-content.classList.add("content");
 
 
-container.appendChild(content);
+
+
+parent.style.backgroundColor = '#333'
+// grandparent.style.backgroundColor = "#333"
+
